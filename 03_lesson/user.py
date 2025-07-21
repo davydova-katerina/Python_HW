@@ -16,6 +16,3 @@ Ekaterina = User("Ekaterina", "Davydova")
 Davydova = User("Ekaterina", "Davydova")
 Ekaterina_Davydova = User("Ekaterina", "Davydova")
 
-Ekaterina.print_first_name()
-Ekaterina.print_last_name()
-Ekaterina.print_full_name()
