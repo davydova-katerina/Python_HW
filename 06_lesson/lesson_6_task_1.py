@@ -11,7 +11,7 @@ button.click()
 
 wait = WebDriverWait(driver, 10)
 green_banner = wait.until(
-    EC.visibility_of_element_located((By.CLASS_NAME, "bg-success"))
+    EC.visibility_of_element_located((By.CSS_SELECTOR, "#ajaxButton"))
 )
 text = green_banner.text
 
