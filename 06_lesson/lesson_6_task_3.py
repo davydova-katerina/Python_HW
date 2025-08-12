@@ -8,7 +8,7 @@ driver.get("https://bonigarcia.dev/selenium-webdriver-java/loading-images.html")
 
 wait = WebDriverWait(driver, 10)
 images = wait.until(
-    EC.presence_of_all_elements_located((By.CSS_SELECTOR, "#image-container img"))
+    EC.text_to_be_present_in_element((By.CSS_SELECTOR, "#text.lead"), "Done!")
 )
 
 third_image_src = images[2].get_attribute("src")
