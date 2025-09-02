@@ -27,9 +27,3 @@ class ProjectsAPI:
         url = f"{self.base_url}/projects/{project_id}"
         response = requests.put(url, json=update_data, headers=self.headers)
         return response
-
-    def delete_project(self, project_id):
-        """DELETE /api-v2/projects/{id} - удаление проекта"""
-        url = f"{self.base_url}/projects/{project_id}"
-        response = requests.delete(url, headers=self.headers)
-        return response
