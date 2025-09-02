@@ -46,7 +46,6 @@ class TestProjects:
         project_id = create_response.json()["id"]
         self.created_projects.append(project_id)
 
-        # Получаем проект
         response = self.api.get_project(project_id)
 
         assert response.status_code == 200
@@ -55,7 +54,6 @@ class TestProjects:
 
     def test_update_project_positive(self):
         """Позитивный тест обновления проекта"""
-        # Сначала создаем проект
         project_data = {
             "title": "Original Project",
             "description": "Original description"
@@ -64,7 +62,6 @@ class TestProjects:
         project_id = create_response.json()["id"]
         self.created_projects.append(project_id)
 
-        # Обновляем проект
         update_data = {
             "title": "Updated Project",
             "description": "Updated description"
@@ -99,7 +96,6 @@ class TestProjects:
 
     def test_update_project_negative_invalid_data(self):
         """Негативный тест обновления проекта с невалидными данными"""
-        # Сначала создаем проект
         project_data = {
             "title": "Test Project",
             "description": "Test description"
@@ -108,7 +104,6 @@ class TestProjects:
         project_id = create_response.json()["id"]
         self.created_projects.append(project_id)
 
-        # Пытаемся обновить с невалидными данными
         invalid_data = {
             "title": "",  # Пустое название - должно быть невалидно
             "description": "Updated description"
