@@ -1,6 +1,7 @@
 from Page import Page
 from selenium.webdriver.remote.webdriver import WebDriver
-from selenium.webdriver.common.by import By import allure
+from selenium.webdriver.common.by import By
+import allure
 
 class CheckoutPage(Page):
     """Страница оформления заказа Sauce Demo."""
