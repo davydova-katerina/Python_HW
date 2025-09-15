@@ -1,8 +1,7 @@
-import pytest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from Page import LoginPage, ProductsPage, CartPage, CheckoutPage
-import allure
+from LoginPage import LoginPage
+from ProductsPage import ProductsPage
+from CartPage import CartPage
+from CheckoutPage import CheckoutPage
 
 
 @allure.feature("Оформление заказа")
