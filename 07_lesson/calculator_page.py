@@ -47,3 +47,4 @@ class CalculatorPage:
             EC.text_to_be_present_in_element(self.display, "15")
         )
         return self.driver.find_element(*self.display).text
+
