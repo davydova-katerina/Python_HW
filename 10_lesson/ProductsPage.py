@@ -1,3 +1,9 @@
+import allure
+from Page import Page
+from CartPage import CartPage
+from selenium.webdriver.chrome.webdriver import WebDriver
+from selenium.webdriver.common.by import By
+
 class ProductsPage(Page):
     """Страница продуктов Sauce Demo."""
 
